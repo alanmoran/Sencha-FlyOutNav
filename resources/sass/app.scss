@@ -1,0 +1,42 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+/*#########################################
+        Fly Out Nav styling
+#########################################*/
+
+#navBtnFlyOutNav {
+  min-width: 44px !important;
+}
+
+#flyOutNav {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 2px 0 2px -2px #b2b9c9;
+    .x-list-header {
+      color: transparent;
+      text-shadow: none;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-shadow: none;
+  }
+}
+
+#flyOutNav.transition {
+    -webkit-transition: width 100ms;
+}
+
+#flyOutNav {
+    .x-list-item {
+      min-width: 250px;
+    }
+}
